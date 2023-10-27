@@ -1,6 +1,7 @@
 ## Dependencias
 
 - SQL Server
+- Visual Studio 
 
 ## Guía para levantar el Back-end
 
@@ -8,13 +9,15 @@
    Abre una terminal en la raíz donde planeas clonar el repositorio y ejecuta el siguiente comando:
    
    git clone https://github.com/GuidoLn/challenge-total-back.git
+
+2. **Abir proyecto con Visual Studio**  
    
-2. **Configuración de la base de datos:**  
+3. **Configuración de la base de datos:**  
 La conexión a la base de datos se realiza mediante la autenticación de Windows. Si deseas utilizar otra forma de autenticación, modifica la cadena de conexión `ConnectionStrings` en tu archivo de configuración. Por ejemplo:  
 ```json
 "DefaultConnection": "Server=localhost;Database=buttonsDB;Trusted_Connection=True; TrustServerCertificate=true"
 ```
 
-3. **Ejecución del programa:**
+4. **Ejecución del programa:**
 
 Corre el programa para iniciar el back-end.
