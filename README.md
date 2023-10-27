@@ -14,3 +14,7 @@ La conexión a la base de datos se realiza mediante la autenticación de Windows
 ```json
 "DefaultConnection": "Server=localhost;Database=buttonsDB;Trusted_Connection=True; TrustServerCertificate=true"
 
+
+3. **Ejecución del programa:**
+
+Corre el programa para iniciar el back-end.
