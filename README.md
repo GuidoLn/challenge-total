@@ -13,7 +13,7 @@
 La conexión a la base de datos se realiza mediante la autenticación de Windows. Si deseas utilizar otra forma de autenticación, modifica la cadena de conexión `ConnectionStrings` en tu archivo de configuración. Por ejemplo:  
 ```json
 "DefaultConnection": "Server=localhost;Database=buttonsDB;Trusted_Connection=True; TrustServerCertificate=true"
-
+```
 
 3. **Ejecución del programa:**
 
