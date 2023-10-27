@@ -36,7 +36,7 @@ public class ButtonService : IButtonService
 
     public async Task<bool> IncrementButtonCountAsync(int buttonId)
     {
-        var button = await _context.Buttons.FirstOrDefaultAsync(b => b.ButtonID == buttonId);
+        var button = await _context.Buttons.FindAsync(buttonId);
         if (button == null)
             return false;
 
@@ -47,7 +47,7 @@ public class ButtonService : IButtonService
 
     public async Task<bool> DeleteButtonAsync(int buttonId)
     {
-        var button = await _context.Buttons.FirstOrDefaultAsync(b => b.ButtonID == buttonId);
+        var button = await _context.Buttons.FindAsync(buttonId);
         if (button == null)
             return false;
 
@@ -55,4 +55,5 @@ public class ButtonService : IButtonService
         await _context.SaveChangesAsync();
         return true;
     }
+
 }
